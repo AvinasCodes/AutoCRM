@@ -1,4 +1,4 @@
-# 🍓 StrawCRM — Simple Tickets. Smarter Support.
+# 🍓 AutoCRM — Simple Tickets. Smarter Support.
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg?style=flat&logo=FastAPI&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-19.x-61DAFB.svg?style=flat&logo=react&logoColor=black)](https://react.dev/)
@@ -8,7 +8,7 @@
 [![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-8E75C2.svg?style=flat&logo=google&logoColor=white)](https://ai.google.dev/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-StrawCRM is an **AI-augmented, real-time Customer Support & Ticketing CRM** designed for high-velocity support teams. Featuring an ultra-polished neumorphic retro-modern UI, bidirectional real-time synchronization between **FastAPI** and **Google Cloud Firestore**, and automated intelligence powered by **Google Gemini AI**.
+AutoCRM is an **AI-augmented, real-time Customer Support & Ticketing CRM** designed for high-velocity support teams. Featuring an ultra-polished neumorphic retro-modern UI, bidirectional real-time synchronization between **FastAPI** and **Google Cloud Firestore**, and automated intelligence powered by **Google Gemini AI**.
 
 ---
 
@@ -53,7 +53,7 @@ StrawCRM is an **AI-augmented, real-time Customer Support & Ticketing CRM** desi
 ## 📁 Repository Structure
 
 ```
-StrawCRM/
+AutoCRM/
 ├── Implementation/
 │   ├── Backend/                 # FastAPI REST API & AI Service
 │   │   ├── app/
@@ -89,8 +89,8 @@ StrawCRM/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/AvinasCodes/StrawCRM.git
-cd StrawCRM
+git clone https://github.com/AvinasCodes/AutoCRM.git
+cd AutoCRM
 ```
 
 ### 2. Backend Setup
@@ -109,8 +109,8 @@ pip install -r requirements.txt
 Create `.env` file in `Implementation/Backend`:
 ```env
 ENVIRONMENT=development
-PROJECT_NAME="StrawCRM API"
-FIREBASE_PROJECT_ID=strawcrm-98ee3
+PROJECT_NAME="AutoCRM API"
+FIREBASE_PROJECT_ID=autocrm-98ee3
 FRONTEND_URL=http://localhost:5173
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
@@ -132,9 +132,9 @@ Create `.env` file in `Implementation/Frontend`:
 ```env
 VITE_API_BASE_URL=http://localhost:8000
 VITE_FIREBASE_API_KEY=your_firebase_api_key
-VITE_FIREBASE_AUTH_DOMAIN=strawcrm-98ee3.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=strawcrm-98ee3
-VITE_FIREBASE_STORAGE_BUCKET=strawcrm-98ee3.firebasestorage.app
+VITE_FIREBASE_AUTH_DOMAIN=autocrm-98ee3.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=autocrm-98ee3
+VITE_FIREBASE_STORAGE_BUCKET=autocrm-98ee3.firebasestorage.app
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 ```
@@ -149,7 +149,7 @@ npm run dev
 
 ## 🌐 1-Click Deployment to Render
 
-StrawCRM includes a complete [render.yaml](render.yaml) Blueprint for instant deployment:
+AutoCRM includes a complete [render.yaml](render.yaml) Blueprint for instant deployment:
 
 1. Push your code to GitHub:
    ```bash
@@ -157,10 +157,10 @@ StrawCRM includes a complete [render.yaml](render.yaml) Blueprint for instant de
    ```
 2. Navigate to [Render Dashboard](https://dashboard.render.com/).
 3. Click **New +** > **Blueprint**.
-4. Select your `StrawCRM` repository.
+4. Select your `AutoCRM` repository.
 5. Render will automatically detect and deploy both services:
-   - **`strawcrm-backend`**: FastAPI Python Web Service (`Implementation/Backend`)
-   - **`strawcrm-frontend`**: Vite React SPA Static Site (`Implementation/Frontend`)
+   - **`autocrm-backend`**: FastAPI Python Web Service (`Implementation/Backend`)
+   - **`autocrm-frontend`**: Vite React SPA Static Site (`Implementation/Frontend`)
 6. Fill in any secret keys (`GEMINI_API_KEY`) and click **Apply**!
 
 ---
@@ -188,5 +188,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Avinash & StrawCRM Contributors</sub>
+  <sub>Built with ❤️ by Avinash & AutoCRM Contributors</sub>
 </div>
